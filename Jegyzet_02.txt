@@ -1,0 +1,103 @@
+		Szoftvertesztelés fogalma
+-Folyamat:
+	-Kiértékelés
+	-Ellenőrzés
+-A jó tesztelés:
+	-Megelőzi a hibákat
+	-Javítja a teljesítményt
+	-Ellenőrzi és érvényesíti az alkalmazás minőségét
+
+		Feltáró tesztelés fogalma
+-Segít a tesztelőknek vagy a tesztelőcsapatnak feltárni a nehezen megjósolható forgatókönyveket és helyzeteket
+	-szoftverhibákhoz vezethetnek
+-A rendszer működésének megismerése a tesztesetek meghatározásával és végrehajtásával párhuzamosan történik
+	-Nem előre megírt tesztekkel dolgozik
+
+		Tesztelő tevékenységei
+
+Tesztterv elkészítése => tesztesetek tervezése => felkészülés a végrehajtásra => tesztek végrehajtása => kilépési feltételek vizsgálata => eredmények értékelése => jelentéslészítés
+
+		Kockázat
+-Lehetséges probléma
+-Az a tényező, amely a jövőben negatív következményeket okozhat
+-Olyasmi, ami még nem történt meg, és lehet, hogy nem is fog
+
+Kockázat(risk) => bekövetkezési valószínűség; lehetséges hatás
+
+		Hiba
+Emberi
+Program
+Hibás működés
+
+-A hibák azonosítását és javítását hibakeresésnek(debugging) nevezik.
+	-Ez nem a tesztelés, hanem a fejlesztési folyamat része
+
+		Emberi hiba
+-Emberi tevékenység, amely során helytelen eredmény jön létre
+-A hibák átmenetiek, és a felhasználók javíthatják
+-Jó felhasználói felület kialakítása csökkentheti a felhasználói hibák számát.
+
+emberi hiba(error,mistake) => szoftver nem megfelelő használata; tervezés és fejlesztés közben elkövetett hibák
+
+		Programhiba
+-A program olyan belső hibája, ami eredményezheti, hogy a szotver nem tudja teljesíteni az elvárt viselkedést
+
+programhiba(bug,defect,fault) => probléma a hardverrel; probléma a hálózattal; probléma a programkódban
+
+		Programhibák típusai
+-Futásidejű:
+	-a program nem fut
+	-byte a=256;
+-Szemantikai:
+	-A kód nem adja meg a kívánt kimenetet
+	-sorozat = a+b;
+-Logikai:
+	-A program nem felel meg a probléma követelményeinek
+-Aritmetikai:
+	-A matematikai számítások hibái
+	-c=a/0;
+-Fordítási:
+	-A program fordítása nem sikeres
+-Szintaktikai:
+	-Programozási nyelv szabályait sértő hiba
+	-if(a>b):{a++;}
+
+		Hibás működés
+-Failure
+-A hibajelenségből eredő, az elvárttól eltérő működés, melyet nem emberi tényezők is okozhatnak
+	-Például, amikor áramszünet miatt leállnak a szerverek
+
+		Tesztelési megközelítések
+-Manuális tesztelés
+-Automatikus tesztelés
+
+		Tesztpiramis
+-A softverek tesztelésének automatizálhatóságát és a tesztelés gyorsaságát mutatja meg
+
+		Manuális tesztelés
+-szoftver minőségbiztosítási (QA) folyamat része
+-emberi meglátásokra és beavatkozásokra támaszkodik
+	-felhasználói felület(UI)
+	-felhasználói élmény(UX)
+-Föbb tulajdonságai:
+	-Időigényes
+	-Ismétlődő
+	-fárasztó
+
+		Automatikus tesztelés
+-Előnyök:
+	-A teszt futtatása gyors és hatékony
+	-hosszútávon költség hatékony
+	-Érdekesebb, mint manuálisan kitölteni újra és újra a formokat
+-Hátrányok:
+	-Drága eszközök
+	-A tesztszkriptek fejlesztése miatt a tesztelés kezdetben kevésbé hatékony
+	-A tesztek karbantartása sok ráfordítással járhat
+	-A teszteszközök korlátokkal rendelkeznek
+
+		Tesztpiramis kiegészítése
+-Regressziós kockázatok figyelése
+	-jelenlegi és korábbi verzió összevetése
+-Üzleti szemlélet hozzáaadása
+	-A funkciókban bekövetkezett változások megértése
+-tesztelési lyuk
