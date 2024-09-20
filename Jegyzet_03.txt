@@ -1,0 +1,113 @@
+		Szoftvertesztelés
+
+Egységteszt(unit test)
+	-Funkcionális tesztelés
+	-Lehetővé teszi a kóddal kapcsolatos problémák megtalálását és kijavítását.
+	-Manuálisan vagy automatizált eszközökkel történik
+	-Az automatizált tesztelőeszközök gyakran megbízhatóbbak és hatékonyabbak
+-Egységteszt célja:
+	-Ellenőrizze a kód helyességét=>Egy alkalmazás minden funkcióját és modulját teszteli=>
+	Azonosítsa a hibákat a fejlesztési ciklus korai szakaszában, ami költségmegtakarítást jelent=>
+	Ez a tesztelés segít a fejlesztőknek megérteni a kódbázisukat, ami lehetővé teszi számunkra a hibák gyors kijavítását=>
+	Lehetővé teszi a kód újrafelhasználását=>Mivel segít a kódolási hibák nagyon korai felismerésében, hosszú távon időt és erőforrásokat takarít meg.
+-Használatának okai:
+	-Segít javítani a kód minőségét
+	-Mivel az egységteszteket a fejlesztési életciklus korai szakaszában végzik, ez segít a hibák mielőbbi észlelésében és kijavításában
+	-Felgyorsítja a telepítési sebességet
+	-újrahasznosított funkciók hibájának felderítése
+		-a magas szintű tesztesetek elbuknak
+		-hosszas elemzés, tesztesetek karbantartása szükséges
+-Ki készíti el az egységtesztet?
+	-Fejlesztő:
+		-Jobban ismeri a kódot
+		-manuális
+	-Tesztelő:
+		-automatizált
+-Egységteszt jellemzői:
+	-Pontosan egy programegységet tesztel önállóan
+	-Nem lépik át a saját moduljuk határát
+	-Az egységtesztek egymástól függetlenül működnek
+	-A futtató környezetüktől függetlenül működnek
+	-Nincs mellékhatásuk
+	-Fordításkor futtathatóak legyenek
+-Előnyök:
+	-segít a hibák korai felismerésében	
+	-Interaktív munka
+	-megkönnyíti a hibakeresést
+	-Automatizálható
+	-csökkenti a teljes tesztelési költséget
+-Hátrányok:
+	-megnöveli a kezdeti fejlesztési időt
+	-tesztesetek elszaporodása megnöveli a karbantási időt
+	-hamis bizalmat kelthet a kód minőségében.
+
+Integrációs teszt:
+	-Célja annak ellenőrzése, hogy az egyes modulok, amelyek már előreláthatólag egységtesztelésen estek át, a várt módon működnek-e együtt
+		-Programegységeket, modulokat, azok egymással és a környezettel történő együttműködését teszteli
+		-Osztályok, szolgáltatások és függőségeik valós működését teszteljük, ideértve az esetleges adatelérést
+		-A szolgáltatások, logikák, modulok együttes működését vizsgálja
+-Bing-Bang tesztelés
+-Top-down tesztelés:
+	-A magasabb szintű modulokat az alacsonyabb szintű modulok előtt tesztelik.Az álkódot(más néven csonkokat, stub-okat) gyakran használják a még ki nem fejlesztett alacsonyabb szintű modulok viselkedésének szimulálására.
+-Bottom-up
+-Sandwich teszt
+
+Előnyök:
+	-Nagyobb bizalom a kódban, mint az egységtesztben
+	-Biztosítás rossz egységteszt esetekre
+	-Feltárja a tervdokumentum hiányosságait és ellentmondásait
+	-A hibák jobb lokalizálása, mint a rendszerszintű tesztelés
+	-Automatizálható és integrálható a napi összeállításokba
+	-A teszteseteket író személy képzettségi szintjének nem kell magasnak lennie
+	-A kód lefedettsége magasabb, mint az egységtesztek esetében.
+Hátrányok:
+	-Olyan embereket igényel, akik ismerik azt a programozási nyelvet, amelyen a szoftvert fejlesztik
+	-A teszteseteket tervező személynek...
+
+Rendszerteszt:
+	-Ellenőrzi, hogy a szállítandó teljes szoftvertermék megfelel-e a követelménydokumentumban leírt specifikációknak.
+	-Feketedobozos tesztelési technika
+	-Eldönti, hogy a rendszer olyan állapotban van-e, hogy átadhatjuk az ügyfélnek vagy sem
+Példa-Webshop:
+	-Egységteszt=>Integrációs teszt=>Rendszerteszt
+
+Előnyök:
+	-a szoftver a végfelhasználók szemszögéből ellenőrzi
+	-feketedobozos tesztelés
+	-Olyan hibákat talál, amelyeket nem lehet észlelni integrációs vagy egységtesztekkel
+	-Növeli a szoftver minőségét az átvételi tesztelés előtt
+Hátrányok:
+	-Manuális folyamat
+
+Rendszerteszt:
+	Smoke						Sanity
+-széles és sekély teszt gyűjtemény | megmutatni, hoy bizonyos módosítások után van-e egyáltalán értelme tovább tesztelni a rendszert
+
+Átvételi teszt:
+	-Ellenőrzi, hogy a szoftver megfelel-e az üzleti követelményeknek, és értékeli a végfelhasználókhoz való szállítási készségét
+	-A szoftvertesztelési folyamat utolsó lépése
+Típusai: 
+	-(UAT) User acceptance testing
+	-(BAT) Business acceptance testing
+	-(CAT) Contract acceptance testing
+	-(RAT) Refulation acceptance testing
+	-(OAT) Operational acceptance testing
+	-Alpha testing
+	-Beta testing
+Előnyök:
+	-Javítja a termék minőségét
+	-Csökkenti a költségeket
+	-Elősegíti a márka imázsát
+Hátrányok: 
+	-------
+
+Elfogadási kritériumok:
+	-Funkcionális
+	-Használhatóság
+	-Teljesítmény
+	-Méretezhetőség
+	-Dokumentáció
+	-Megbízhatóság
+	-Megfelelés
+	-Kompatibilitás
+	-Helyrehozhatóság	
